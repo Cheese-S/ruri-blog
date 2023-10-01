@@ -38,12 +38,25 @@
   - 这个会在你终端的当前文件夹内下载一个叫做**ruri_blog**的文件夹
     - 例子![](img/2023-09-30-22-41-25.png) 
   - 用 **vscode** 打开这个文件夹
+  - ```yarn install```
 
 ## 写博客
 - ```yarn run hexo serve```
+  - 如果你想看到草稿的话
+    - ```yarn run hexo serve --drafts```
   - http://localhost:4000/ 浏览器打开这个网址
     - 恭喜你!!在本地部署了你的博客!
   - 打开 source/_posts/hello-world.md
     - 修改并保存，你的浏览器应该会自动刷新
     - 你可以实时看到自己blog修改之后的样子！
-- ``````
+- ```yarn run hexo new draft "name"```
+  - 创造一个新的草稿
+    - 正式部署在网络上是看不见的
+  - 把name改成你想要的标题
+    - 例如标题是 我爱吃西瓜
+      - ```yarn run hexo new draft "我爱吃西瓜"```
+- ```yarn run hexo publish draft "name"```
+  - 发表一个草稿 
+    - 正式部署的时候就看见了
+- ```yarn run hexo new post "name"```
+  - 创立一个新的文章 **注意：不是草稿**
